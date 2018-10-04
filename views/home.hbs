@@ -12,7 +12,14 @@
 <body>
   {{> header}}
   <p>{{screamIt welcomeMessage}}</p>
-  {{> footer}}
+  <p>This site was created using Node.js, Express.js, and <a href="http://handlebarsjs.com/">Handlebars</a>!</p>
+  <h3>Check the Weather!</h3>
+  <form>
+    Location:
+    <input type="text" name="location" value="78613" />
+    <br>
+    <br>
+    <input type="submit" value="Submit" </form> {{> footer}}
 
 </body>
 

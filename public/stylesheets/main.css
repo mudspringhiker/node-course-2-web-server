@@ -1,3 +1,8 @@
+body {
+  max-width: 960px;
+  text-align: center;
+}
+
 .title {
   color: fuchsia;
 }
@@ -5,4 +10,8 @@
 .nav {
   display: flex;
   justify-content: space-evenly;
+}
+
+.nav a {
+  text-decoration: none;
 }
