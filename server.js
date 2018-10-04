@@ -1,6 +1,7 @@
 const express = require("express");
 const hbs = require("hbs");
 const fs = require("fs");
+const path = require("path");
 
 const port = process.env.PORT || 3000;
 const app = express();
@@ -25,7 +26,7 @@ app.use((req, res, next) => {
 // res.render("maintenance.hbs");
 // });
 
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(path.join(__dirname, "/public")));
 
 hbs.registerHelper("getCurrentYear", () => {
   return new Date().getFullYear();
